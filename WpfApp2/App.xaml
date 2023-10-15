@@ -1,0 +1,41 @@
+﻿<Application x:Class="WpfApp2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfApp2"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="button-row3" TargetType="Button">
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="Background" Value="#FFFFF9F0"></Setter>
+            <Setter Property="BorderThickness" Value="0"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Top"></Setter>
+            
+            
+            
+        </Style>
+        <Style x:Key="style_Button" TargetType="Button">
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="Margin" Value="2.5,1.5,2.5,1.5" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border
+                        x:Name="border"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        Background="White"
+                        CornerRadius="3">
+                            <Button
+                            Content="{TemplateBinding Content}"
+                            Background="White"
+                            BorderBrush="Transparent"
+                            Foreground="{TemplateBinding Foreground}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Application.Resources>
+</Application>
