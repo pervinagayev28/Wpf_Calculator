@@ -8,27 +8,37 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Images\delete.png">
+    <None Remove="Images\delete.png" />
+    <None Remove="Images\expand-window.png" />
+    <None Remove="Images\history.png" />
+    <None Remove="Images\menu.png" />
+    <None Remove="Images\plus-minus.png" />
+    <None Remove="Images\square-root.png" />
+    <None Remove="Images\subscript %281%29.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\delete.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\expand-window.png">
+    </Content>
+    <Content Include="Images\expand-window.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\history.png">
+    </Content>
+    <Content Include="Images\history.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\menu.png">
+    </Content>
+    <Content Include="Images\menu.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\plus-minus.png">
+    </Content>
+    <Content Include="Images\plus-minus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\square-root.png">
+    </Content>
+    <Content Include="Images\square-root.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Images\subscript %281%29.png">
+    </Content>
+    <Content Include="Images\subscript (1).png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Content>
   </ItemGroup>
 
 </Project>
