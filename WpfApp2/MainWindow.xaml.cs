@@ -39,8 +39,10 @@ namespace WpfApp2
 
         private void btn_change_size(object sender, RoutedEventArgs e)
         {
-            this.Width = MaxWidth;
-            this.Height = MaxHeight;
+            if (WindowState != WindowState.Maximized)
+                WindowState = WindowState.Maximized;
+            else
+                WindowState = WindowState.Normal;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
